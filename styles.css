@@ -1,0 +1,300 @@
+body {
+	background-color: #ffcccc;
+}
+
+.clear {
+	clear: both;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 0; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+}
+
+.modal-content {
+  position: relative;
+    background: rgba(255, 206, 222, 0.8);
+    color: #fff;
+    margin: auto;
+    padding: 0 0 20px;
+    width: 500px;
+    top: 5%;
+    border: solid 10px #fff;
+}
+
+.bottom span {
+	font-weight: bold;
+}
+
+.media-file {
+	margin: 40px 0;
+}
+
+.media-file ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.media-file  audio {
+    border: solid 2px #ff0033;
+    border-radius: 25px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  position: relative;
+  right: 5px;
+  top: -10px;
+  font-size: 50px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title {
+    width: 349px;
+    margin: -1px auto;
+}
+
+/****************************/
+
+.container {
+  width: 600px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 50px;
+    background-color: #ffeaf1;
+}
+
+.info-box  {
+    width: 502px;
+    margin: 0 auto;
+    background: url(images/heart-bg.png) no-repeat top center;
+	padding-top: 80px;
+	padding-bottom: 60px;
+}
+
+.info-cell:first-child {
+    width: 425px;
+    margin: 0 auto;
+}
+
+.info-cell:last-child {
+    width: 154px;
+    margin: 0 auto;
+}
+
+.addNames label {
+    display: none;	
+}
+
+.addNames input {
+    padding-left: 10px;
+    height: 30px;
+    width: 160px;
+    border-radius: 5px;
+    background: url(images/input.png) no-repeat;
+    border: none;
+}
+
+.addNames input:first-child {
+	position: relative;
+    left: 15px;
+}
+
+.add {
+    font-size: 5rem;
+    font-family: 'PT Sans', sans-serif;
+    color: #ff0033;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 15px;
+    position: relative;
+    top: 25px;
+	left: 2px;
+}
+
+.addNames input:last-child {
+	margin-left: 15px;
+}
+
+#myBtn {	
+	padding: .375rem .75rem;
+    width: 154px;
+    margin: 20px auto;
+    height: 154px;
+    background: url(images/submit-but.png) no-repeat;
+	position: relative;
+    left: -5px;
+}
+
+#myBtn:hover {	
+    background: url(images/submit-but-hover.png) no-repeat;
+}
+
+#btnClose:hover {
+     background: url(images/refresh-but-hover.png);
+}
+
+#btnClose {
+	margin: 20px auto;
+    width: 154px;
+    height: 155px;
+    display: block;
+    background: url(images/refresh-but.png);
+    border: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-family: 'PT Sans', sans-serif;
+	color: #ff0033;
+	font-weight: 700;
+	text-align: center;
+}
+
+.top p {
+    font-size: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff0033;
+    font-weight: 700;
+    text-align: center;
+	margin: 20px;
+}
+
+.bottom p,
+.bottom h2.result {
+    color: #000;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0px;
+}
+
+.bottom {
+	text-align: center;
+}
+
+h2,
+.bottom h2#congrat {
+	font-size: 1rem;
+	font-family: 'PT Sans', sans-serif;
+	color: #FF0033;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.bottom img {
+    margin: 30px auto 20px;
+    display: block;
+    width: 356px;
+}
+
+/*PLAYER */
+
+#start {
+    height: 81px;
+    width: 81px;
+    background: url(images/rec-but.png) no-repeat;
+    border: none;
+}
+
+#stop {
+    height: 81px;
+    width: 81px;
+    background: url(images/stop-but.png) no-repeat;
+    border: none;
+	margin-left: 1px;
+}
+
+#download {
+    height: 81px;
+    width: 81px;
+    background: url(images/download-but.png) no-repeat;
+    border: none;
+	margin-left: -1px;
+}
+
+#download img {
+    position: relative;
+    left: -6px;
+	top: -1px;
+}
+
+.player span {
+        height: 81px;
+    width: 81px;
+    background: url(images/download-but-active.png) no-repeat;
+    display: inline-block;
+    position: relative;
+    top: -65px;
+	left: -1px;
+}
+
+.player span a {
+    display: inline-block;
+    width: 81px;
+    height: 81px;
+    text-indent: -9999px;
+}
+
+.player {
+    width: 267px;
+    height: 98px;
+    margin: 0 auto;
+    background: url(images/player-bg.png) no-repeat;
+    text-align: center;
+    padding-top: 8px;
+}
+
+
+.headline {
+	margin-top: 30px;
+	text-align:center;
+}
+
+footer {
+  margin-top: 5%;
+  color: #ff0033;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+footer p {
+  font-size: 1.3rem;
+
+}
+
+footer a {
+	color: #FF9999;
+}
+
+footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	
+}
