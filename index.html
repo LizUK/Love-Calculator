@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Love Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    
+    </head>
+    <body>
+     
+    	<div class="container main">
+        
+            <div class="top">
+                <h1 class="title">Love Calculator</h1>
+                <h2>*Add your True Love's name to find your love connection.</h2>
+            </div>
+            
+            <div class="addNames">
+            
+                <div class="info-box">
+                
+                    <form action="#" id="myForm" onSubmit="return loveTest()" method="post">
+                
+                        <div class="info-cell">
+                        
+                            <label>Your Name:</label><input type="text" name="yourName" id="yourName" placeholder="Your Name">
+                            
+                            <span class="add">+</span>
+                            
+                            <label>Your True Love:</label><input type="text" name="trueLoveName" id="trueLoveName" placeholder="Your True Love's Name">
+                        <div class="clear"></div>
+                        </div>
+                    
+                        <div class="info-cell">  
+                            <input id="myBtn" type="submit" value=""></input>
+                        </div>  
+                    
+                    </form>
+            
+                </div><!-- End info-box -->
+            
+            </div><!-- End addNames -->    
+        
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+            <!-- Modal content -->
+            <div class="modal-content">
+                
+               <span class="close" onClick="window.location.reload();">&times;</span>
+               
+               	<section class="container-fluid">
+                
+                	<div class="title"><img src="images/title.png" alt=""/></div>
+                
+                    <div>
+                        <div class="top">
+                          <p><span id="lovePercent"></span>%</p>
+                            
+                        </div>
+                    
+                        <div class="bottom">
+                            
+                           <p>The love connection between <span id="you"></span> and <span id="trueLove"></span><span class="result"></span></p>
+                           <img src="images/empty-heart.png" alt="" />
+                           <h2 id="congrat"></h2>
+                        
+                        </div><!-- End .bottom -->
+                         <div  class="media-file">
+                          <ul id="ul"></ul>
+                        </div>
+                        <div class="sharethis-inline-share-buttons"></div>
+                    
+                    </div><!-- End .container -->
+                
+                <button id="btnClose" type="submit" onClick="window.location.reload();"></button>
+                
+                </section><!-- End .container-fluid -->
+                
+            </div><!-- End modal-content -->
+        
+        </div><!-- End #myModal -->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+        
+        var modal = document.getElementById("myModal");
+        
+        var btn = document.getElementById("myBtn");
+        
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        </script>
+        <script type="text/javascript" src="js.js" charset="utf-8"></script>
+        
+        <footer>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/elizabeth-phillips-a3831961/">Elizabeth Phillips</a></p>
+        </footer>
+
+    </body>
+
+</html>
